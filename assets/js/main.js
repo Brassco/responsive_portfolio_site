@@ -68,3 +68,28 @@ tabs.forEach( tab => {
         tab.classList.add('qualification__active')
     })
 }) 
+
+/*============ SERVICES MODAL =============*/
+
+const modalViews = document.querySelectorAll('.services__modal'),
+    modalButtons = document.querySelectorAll('.services__button'),
+    modalClose = document.querySelectorAll('.services__modal-close');
+
+let modalFunction = function(modalElement){
+    modalViews[modalElement].classList.add('active-modal')
+}
+
+modalButtons.forEach( (modalBtn, i) => {
+ 
+    modalBtn.addEventListener('click', () => {
+        modalFunction(i)
+    })
+})
+
+modalClose.forEach( (modalClose) => {
+    modalClose.addEventListener('click', () => {
+        modalViews.forEach( modalView => {
+            modalView.classList.remove('active-modal')
+        })
+    })
+})
