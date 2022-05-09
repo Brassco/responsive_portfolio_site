@@ -109,3 +109,19 @@ let swiper = new Swiper(".portfolio__container", {
     mousewheel: true,
     keyboard: true,
   });
+
+
+  /*========== SWIPER TESTIMONIAL SLIDER ==========*/
+let testimonialSwiper = new Swiper(".testimonial__container", {
+    loop: true,
+    grabCursor: true,
+    spaceBetween: 48,
+
+    pagination: {
+      el: ".swiper-pagination-testimonial",
+      clickable: true,
+      dynamicBullets: true,
+    },
+    // mousewheel: true,
+    // keyboard: true,
+  });
