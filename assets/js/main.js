@@ -122,6 +122,12 @@ let testimonialSwiper = new Swiper(".testimonial__container", {
       clickable: true,
       dynamicBullets: true,
     },
+
+    breakpoints: {
+        568: {
+            slidesPerView: 2,
+        }
+    }
     // mousewheel: true,
     // keyboard: true,
   });
